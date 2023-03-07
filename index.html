@@ -40,31 +40,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 
-    <!-- Swiper -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
-
-    <style>
-        /* .swiper {
-            width: 100%;
-            height: 99%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        } */
-    </style>
 
     <style>
         .Laptop_Video {
@@ -442,6 +417,14 @@
 
     <!-- Horizontal Scroll -->
     <style type="text/css">
+
+        .border_color {
+            border-top-color: #324ed4;
+            border-bottom-color: #324ed4;
+            border-top-style: solid;
+            border-bottom-style: solid;
+        }
+
         .blue {
             background-color: #eaeeff;
         }
@@ -660,29 +643,7 @@
         }
     </style>
 
-    <!-- Swiper Container -->
-    <!-- <style>
-        swiper-container {
-            width: 100%;
-            height: 100%;
-        }
 
-        swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style> -->
 </head>
 
 <body style="font-family: 'Outfit', sans-serif;">
@@ -939,7 +900,6 @@
             </div>
 
             <!-- TCI = Take Consistent Income -->
-            <!-- <div class="my-5 extra_space prevent-select" style="color:white">TCI</div> -->
 
             <div class="mt-5 row justify-content-center wow animatable fadeInUp" id="Take_Consistent_Income">
                 <div class="px-4 col-md-7">
@@ -1009,30 +969,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Swiper Container -->
-        <!-- <swiper-container class="mySwiper" pagination="false" pagination-clickable="false" direction="horizontal" space-between="30" mousewheel="true">
-                <swiper-slide>Slide 1</swiper-slide>
-                <swiper-slide>Slide 2</swiper-slide>
-                <swiper-slide>Slide 3</swiper-slide>
-                <swiper-slide>Slide 4</swiper-slide>
-                <swiper-slide>Slide 5</swiper-slide>
-                <swiper-slide>Slide 6</swiper-slide>
-                <swiper-slide>Slide 7</swiper-slide>
-                <swiper-slide>Slide 8</swiper-slide>
-                <swiper-slide id="slide_9">Slide 9</swiper-slide>
-            </swiper-container> -->
-
-        <!-- <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-            </div>
-        </div>
-        <span id="end_of_swiper" style="color:transparent">.</span> -->
 
         <!-- Start of Horizontal Slider -->
         <section class="mt-5 demo" id="section-slides">
@@ -1172,7 +1108,7 @@
                     <section class="panel bordeaux" id="panel_3">
                         <div class="container-fluid" style="width:100vw;height:100vh">
                             <div class="row" style="width:100vw;height:100vh">
-                                <div class="col-12" style="height:100vh">
+                                <div class="col-12 justify-content-center" style="height:100vh">
                                     <div class="container d-flex justify-content-center align-content-center"
                                         style="height:100vh">
                                         <div
@@ -3822,8 +3758,6 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
         </script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script> -->
 
     <script src="js/intlTelInput.min.js"></script>
     <script src="js/scrollmagic/ScrollMagic.min.js"></script>
@@ -3832,100 +3766,9 @@
     <script src="js/vimeo_player.js" defer></script>
     <script src="js/odometer.js" defer></script>
 
-    <!-- <script type="text/javascript" src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
-    <script type="text/javascript" src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <script type="text/javascript"
-        src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <script type="text/javascript"
-        src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    <script type="text/javascript" src="https://scrollmagic.io/assets/js/tracking.js"></script> -->
 
     <script src="js/scrollmagic/gsap.min.js"></script>
     <script src="js/scrollmagic/ScrollTrigger.min.js"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script> -->
-
-    <!-- <script>
-        // const swiperContainer = document.querySelector('#end_of_swiper');
-        // const body = document.querySelector('body');
-        // const swiper = document.querySelector('.swiper.mySwiper');
-
-        var swiper_1 = new Swiper('.swiper.mySwiper', {
-            direction: "horizontal",
-            slidesPerView: 1,
-            spaceBetween: 30,
-            mousewheel: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            on: {
-                reachEnd: function () {
-                    // Disable mousewheel control
-                    this.mousewheel.disable();
-                },
-                fromEdge: function () {
-                    // Enable mousewheel control again
-                    this.mousewheel.enable();
-                }
-            }
-        });
-
-        function isSwiperVisible() {
-            var elementTop = $('.swiper.mySwiper').offset().top;
-            var elementBottom = elementTop + $('.swiper.mySwiper').outerHeight();
-            var viewportTop = $(window).scrollTop();
-            var viewportBottom = viewportTop + $(window).height();
-            return elementTop >= viewportTop && elementBottom <= viewportBottom;
-        }
-
-        $(window).on('scroll', function () {
-            if (isSwiperVisible()) {
-                // swiper_1.simulateWheel();
-                event.preventDefault();
-                console.log('swiper is fully visible on screen')
-            }
-        });
-
-        // const observer = new IntersectionObserver(entries => {
-        //     entries.forEach(entry => {
-        //         if (entry.isIntersecting) {
-        //             console.log('swiper-container is fully visible on the screen')
-
-        //         } else {
-        //             // swiper-container is not fully visible on the screen
-        //         }
-        //     });
-        // });
-        // observer.observe(swiperContainer);
-        // window.addEventListener('scroll', () => {
-        //     const rect = swiperContainer.getBoundingClientRect();
-        //     if (rect.top < window.innerHeight && rect.bottom > 0) {
-        //         console.log('u r visible o screen ')
-        //         var swiper_1 = new Swiper(swiperContainer, {
-        //             direction: "horizontal",
-        //             slidesPerView: 1,
-        //             spaceBetween: 30,
-        //             mousewheel: true,
-        //             pagination: {
-        //                 el: ".swiper-pagination",
-        //                 clickable: true,
-        //             },
-        //             on: {
-        //                 reachEnd: function () {
-        //                     // Disable mousewheel control
-        //                     this.mousewheel.disable();
-        //                 },
-        //                 fromEdge: function () {
-        //                     // Enable mousewheel control again
-        //                     this.mousewheel.enable();
-        //                 }
-        //             }
-        //         });
-        //     }
-        // });
-
-    </script> -->
 
     <script>
         $(function () { // wait for document ready
@@ -3956,12 +3799,7 @@
                 .setPin("#pinContainer")
                 .setTween(wipeAnimation)
                 .addIndicators() // add indicators (requires plugin)
-                // .addTo(controller);
-
-            // scene.on("progress", function (event) {
-            //     console.log("Scrolled");
-            // });
-
+            // .addTo(controller);
 
 
             // init
@@ -3984,12 +3822,12 @@
             scene_1 = new ScrollMagic.Scene({
                 triggerElement: "#pinContainer_1",
                 triggerHook: "onLeave",
-                duration: "200%"
+                duration: "300%"
             })
                 .setPin("#pinContainer_1")
                 .setTween(wipeAnimation_1)
                 .addIndicators() // add indicators (requires plugin)
-                // .addTo(controller_1);
+            // .addTo(controller_1);
 
 
 
@@ -4013,12 +3851,12 @@
             scene_2 = new ScrollMagic.Scene({
                 triggerElement: "#pinContainer_2",
                 triggerHook: "onLeave",
-                duration: "200%"
+                duration: "300%"
             })
                 .setPin("#pinContainer_2")
                 .setTween(wipeAnimation_2)
                 .addIndicators() // add indicators (requires plugin)
-                // .addTo(controller_2);
+            // .addTo(controller_2);
         });
     </script>
 

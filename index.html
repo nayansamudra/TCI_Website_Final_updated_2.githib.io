@@ -1456,7 +1456,7 @@
             </div>
 
             <div id="Mobile_pinContainer" style="color:#000d47">
-                <div id="Mobile_slideContainer">
+                <div id="Mobile_slideContainer" class="mobile_section">
                     <section class="mobile_panel">
                         <div class="container-fluid" style="width:100vw;height:100vh">
                             <div class="row py-5" style="width:100vw;height:100vh">
@@ -1615,7 +1615,7 @@
                 </div>
             </div>
             <div id="Mobile_pinContainer_1" style="color:#000d47">
-                <div id="Mobile_slideContainer_1">
+                <div id="Mobile_slideContainer_1" class="mobile_section">
                     <section class="mobile_panel_1">
                         <div class="container-fluid" style="width:100vw;height:100vh">
                             <div class="row py-5" style="width:100vw;height:100vh">
@@ -1774,7 +1774,7 @@
                 </div>
             </div>
             <div id="Mobile_pinContainer_2" style="color:#000d47">
-                <div id="Mobile_slideContainer_2">
+                <div id="Mobile_slideContainer_2" class="mobile_section">
                     <section class="mobile_panel">
                         <div class="container-fluid" style="width:100vw;height:100vh">
                             <div class="row py-5" style="width:100vw;height:100vh">
@@ -4101,6 +4101,14 @@
             return elementTop >= viewportTop && elementBottom <= viewportBottom;
         }
 
+        function isSwiperVisible_Mobile() {
+            var elementTop = $('.mobile_section').offset().top;
+            var elementBottom = elementTop + $('.mobile_section').outerHeight();
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+            return elementTop >= viewportTop && elementBottom <= viewportBottom;
+        }
+
         function isSwipernotVisible() {
             var elementTop = $('#Course_Curriculum_NEW_BOOTSTRAP').offset().top;
             var elementBottom = elementTop + $('#Course_Curriculum_NEW_BOOTSTRAP').outerHeight();
@@ -4119,6 +4127,12 @@
 
         $(window).on('scroll', function () {
             if (isSwiperVisible()) {
+                event.preventDefault();
+                isSlider = true
+                clearTimeout(myTimeout)
+                console.log(isSlider)
+            }            
+            else if (isSwiperVisible_Mobile()) {
                 event.preventDefault();
                 isSlider = true
                 clearTimeout(myTimeout)

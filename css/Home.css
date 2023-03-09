@@ -2761,18 +2761,6 @@ div.course-panel p {
   text-decoration: none;
 }
 
-[data-toggle="collapse"] .fa:before {
-  content: "\f1fc";
-  font-family: "Ionicons";
-  font-style: normal;
-}
-
-[data-toggle="collapse"].collapsed .fa:before {
-  content: "\f102";
-  font-family: "Ionicons";
-  font-style: normal;
-}
-
 #accordion_1 button[aria-expanded="true"] {
   color: #000 !important;
   background: #324ed4 !important;
@@ -2782,6 +2770,11 @@ div.course-panel p {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+
+#accordion_1 button[aria-expanded="true"] .icon i::before{
+  content: '▬' !important;
+  color: #324ed4 !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

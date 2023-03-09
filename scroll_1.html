@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            /* overflow: hidden; */
+        }
+
+        .section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+
+        .section:nth-child(1) {
+            background-color: #e74c3c;
+        }
+
+        .section:nth-child(2) {
+            background-color: #3498db;
+        }
+
+        .section:nth-child(3) {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Section 1</h2>
+            <p>Content of section 1 goes here</p>
+        </div>
+        <div class="section">
+            <h2>Section 2</h2>
+            <p>Content of section 2 goes here</p>
+        </div>
+        <div class="section">
+            <h2>Section 3</h2>
+            <p>Content of section 3 goes here</p>
+        </div>
+    </div>
+
+    <script>
+        const section = document.querySelector('.section');
+
+        section.addEventListener('wheel', function (event) {
+            if (event.deltaX < 0) {
+                // Scroll to the right
+                section.scrollLeft += 50;
+            } else if (event.deltaX > 0) {
+                // Scroll to the left
+                section.scrollLeft -= 50;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

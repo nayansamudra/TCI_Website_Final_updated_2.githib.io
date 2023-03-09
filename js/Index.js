@@ -112,10 +112,22 @@ $(document).ready(function () {
     if ($(window).width() < 413) {
       $("#For_Mobile_View_image-item").removeClass("justify-content-center");
       $('body').css('overflow-x', 'clip')
+      mobile_scene.addTo(mobile_controller)
+      mobile_scene_1.addTo(mobile_controller_1)
+      mobile_scene_2.addTo(mobile_controller_2)
+      scene.destroy()
+      scene_1.destroy()
+      scene_2.destroy()
     }
     if ($(window).width() > 413) {
       $("#For_Mobile_View_image-item").addClass("justify-content-center");
       $('body').css('overflow-x', 'clip')
+      scene.addTo(controller)
+      scene_1.addTo(controller_1)
+      scene_2.addTo(controller_2)
+      mobile_scene.destroy()
+      mobile_scene_1.destroy()
+      mobile_scene_2.destroy()
     }
   });
 
@@ -128,9 +140,21 @@ $(document).ready(function () {
   if ($(window).width() < 413) {
     $("#For_Mobile_View_image-item").removeClass("justify-content-center");
     $('body').css('overflow-x', 'clip')
+    mobile_scene.addTo(mobile_controller)
+    mobile_scene_1.addTo(mobile_controller_1)
+    mobile_scene_2.addTo(mobile_controller_2)
+    scene.destroy()
+    scene_1.destroy()
+    scene_2.destroy()
   }
   if ($(window).width() > 413) {
     $("#For_Mobile_View_image-item").addClass("justify-content-center");
     $('body').css('overflow-x', 'clip')
+    scene.addTo(controller)
+    scene_1.addTo(controller_1)
+    scene_2.addTo(controller_2)
+    mobile_scene.destroy()
+    mobile_scene_1.destroy()
+    mobile_scene_2.destroy()
   }
 });

@@ -101,13 +101,13 @@ function SendOtp() {
                 }, 10000);
                 $("#resend_btn").click(function () {
                     console.log("u r inside If --> resend")
-                    console.log("sendOTP_via_resend",sendOTP_via_resend)
-                    if(sendOTP_via_resend == false){
+                    console.log("sendOTP_via_resend", sendOTP_via_resend)
+                    if (sendOTP_via_resend == false) {
                         SendOtp()
                         sendOTP_via_resend = true
                         setTimeout(() => {
                             sendOTP_via_resend = false
-                            console.log("sendOTP_via_resend",sendOTP_via_resend)
+                            console.log("sendOTP_via_resend", sendOTP_via_resend)
                         }, 30000);
                     }
                 })
@@ -120,7 +120,7 @@ function SendOtp() {
                     console.log("sendOTP_via_resend = ", sendOTP_via_resend)
                     setTimeout(() => {
                         sendOTP_via_resend = false
-                        console.log("sendOTP_via_resend",sendOTP_via_resend)
+                        console.log("sendOTP_via_resend", sendOTP_via_resend)
                     }, 30000);
                     SendOtp()
                 })
@@ -128,7 +128,7 @@ function SendOtp() {
 
             // enable evt listner
             $("#validate_btn").click(function () {
-                if(verify_otp_counter == 0){
+                if (verify_otp_counter == 0) {
                     verify_otp()
                     verify_otp_counter = 1
                 }
@@ -145,7 +145,7 @@ function SendOtp() {
             $('#send_btn').off()
             $("#submit_btn").click(function () {
                 console.log('submit form called INSIDE SEND OTP')
-                if(submit_lead_form_counter == 0){
+                if (submit_lead_form_counter == 0) {
                     submit_lead_form()
                     submit_lead_form_counter = 1
                 }
@@ -186,7 +186,7 @@ const verify_otp = () => {
             $("#submit_btn").removeClass("temp_disb")
             $("#submit_btn").click(function () {
                 console.log('submit form called INSIDE VERIFY OTP')
-                if(submit_lead_form_counter == 0){
+                if (submit_lead_form_counter == 0) {
                     submit_lead_form()
                     submit_lead_form_counter = 1
                 }
@@ -334,9 +334,9 @@ $(document).ready(function () {
         submit_lead_form_counter = 0
         sendOTP_via_resend = false
         global_email_valid = false
-        console.log("global_otp_ct",global_otp_ct)
-        console.log("sendOTP_via_resend",sendOTP_via_resend)
-        console.log("global_email_valid",global_email_valid)
+        console.log("global_otp_ct", global_otp_ct)
+        console.log("sendOTP_via_resend", sendOTP_via_resend)
+        console.log("global_email_valid", global_email_valid)
         $('#Send_OTP_Modal').removeClass().addClass('container d-flex justify-content-center align-items-center')
         $('#Validate_OTP_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')
         $('#User_Details_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')
@@ -362,28 +362,69 @@ $(document).ready(function () {
             // $('body').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
             $('body').css('overflow-x', 'clip')
         })
-
     $(window).on('hashchange', function (event) {
         if (window.location.hash != "#modal") {
             $('#GetFreeCounseling').modal('hide');
         }
     });
 
+    $('#Tredcode_Modal').on('shown.bs.modal', function () {
+        $('html').css('overflow', 'hidden')
+        window.location.hash = "modal_1";
+    })
+        .on('hidden.bs.modal', function () {
+            $('html').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
+            // $('body').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
+            $('body').css('overflow-x', 'clip')
+        })
     $(window).on('hashchange', function (event) {
         if (window.location.hash != "#modal_1") {
             $('#Tredcode_Modal').modal('hide');
         }
     });
 
-    $('#Tredcode_Modal').on('shown.bs.modal', function () {
-        console.log('tredcode_modal is open')
+    $('#Step_1_Modal').on('shown.bs.modal', function () {
         $('html').css('overflow', 'hidden')
-        window.location.hash = "modal_1";
+        window.location.hash = "modal_2";
     })
         .on('hidden.bs.modal', function () {
-            console.log('tredcode_modal is close')
             $('html').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
             // $('body').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
             $('body').css('overflow-x', 'clip')
         })
+    $(window).on('hashchange', function (event) {
+        if (window.location.hash != "#modal_2") {
+            $('#Step_1_Modal').modal('hide');
+        }
+    });
+
+    $('#Step_2_Modal').on('shown.bs.modal', function () {
+        $('html').css('overflow', 'hidden')
+        window.location.hash = "modal_3";
+    })
+        .on('hidden.bs.modal', function () {
+            $('html').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
+            // $('body').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
+            $('body').css('overflow-x', 'clip')
+        })
+    $(window).on('hashchange', function (event) {
+        if (window.location.hash != "#modal_3") {
+            $('#Step_2_Modal').modal('hide');
+        }
+    });
+
+    $('#Step_3_Modal').on('shown.bs.modal', function () {
+        $('html').css('overflow', 'hidden')
+        window.location.hash = "modal_4";
+    })
+        .on('hidden.bs.modal', function () {
+            $('html').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
+            // $('body').attr('style', 'overflow-x:hidden !important; overflow-y:auto !important')
+            $('body').css('overflow-x', 'clip')
+        })
+    $(window).on('hashchange', function (event) {
+        if (window.location.hash != "#modal_4") {
+            $('#Step_3_Modal').modal('hide');
+        }
+    });
 });

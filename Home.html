@@ -417,9 +417,7 @@
             cursor: pointer;
         }
         @media (max-width:992px) {
-            .modal .padding_left {
-                padding-left: 10% !important;
-            }
+            
             .modal .logo_img {
                 width:25% !important
             }
@@ -440,15 +438,41 @@
             .modal .text_size {
                font-size: 17px !important;
             }
+            .Heading_Steps{
+                font-size: xx-large !important;
+            }
+        }
+
+        @media (min-width:855.1px) {
+            .col-4.Modal_Click_Here{
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+            .col-4.Modal_Click_Here .logo_img{
+                width:40% !important
+            }
+            .modal .padding_left {
+                padding-left: 10% !important;
+            }
+        }
+        @media (min-width:855.1px) and (max-width:1200px){
+            .modal .text_size {
+               font-size: 17px !important;
+            }
+            .modal .padding_left {
+                padding-left: 20% !important;
+            }
         }
 
         @media (max-width:855px) {
+            .modal .padding_left {
+                padding-left: 10% !important;
+            }
             #pro_in_three_steps {
                 width: 92% !important;
                 padding-left: 0 !important;
                 padding-right: 0 !important;
             }
-
             #pro_in_three_steps .col-12 {
                 padding-left: 0 !important;
                 padding-right: 0 !important;
@@ -846,7 +870,7 @@
         <div class="mt-5 container-fluid pagespeed_hide" id="pro_in_three_steps" style="width:80%">
             <div class="row">
                 <div class="mb-3 mt-5 pt-5 personal_learning_p">
-                    <p class="my-0"><span style="font-size: xx-large;">Be a <span style="color:#5271ff">PRO</span> in 3 steps</span></p>
+                    <p class="my-0"><span class="Heading_Steps" style="font-size: xxx-large;">Be a <span style="color:#5271ff">PRO</span> in 3 steps</span></p>
                 </div>
             </div>
             <div class="row px-1 justify-content-center" style="padding-right: 0 !important;">
@@ -2373,7 +2397,7 @@
 
     <div class="modal fade" id="Step_1_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-notify modal-info modal-lg" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-notify modal-info" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center" style="border-bottom: 1px solid white;">
                     <button type="button" class="btn-close Button_Close" data-bs-dismiss="modal"
@@ -2491,7 +2515,7 @@
 
     <div class="modal fade" id="Step_2_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-notify modal-info modal-lg" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-notify modal-info" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center" style="border-bottom: 1px solid white;">
                     <button type="button" class="btn-close Button_Close" data-bs-dismiss="modal"
@@ -2605,7 +2629,7 @@
 
     <div class="modal fade" id="Step_3_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-notify modal-info modal-lg" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-notify modal-info" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center" style="border-bottom: 1px solid white;">
                     <button type="button" class="btn-close Button_Close" data-bs-dismiss="modal"

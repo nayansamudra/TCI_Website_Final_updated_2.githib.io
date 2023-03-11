@@ -2772,8 +2772,8 @@ div.course-panel p {
   transition: 0.3s;
 }
 
-#accordion_1 button[aria-expanded="true"] .icon i::before{
-  content: '▬' !important;
+#accordion_1 button[aria-expanded="true"] .icon i::before {
+  content: "▬" !important;
   color: #324ed4 !important;
 }
 
@@ -2874,16 +2874,13 @@ button[aria-expanded="false"] {
   #delayedPopup_row_first_col {
     margin-left: 0 !important;
   }
-
   #delayedPopup_row_second_col {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-
   #delayedPopup_row_second_col .img_description span {
     font-size: medium !important;
   }
-
   #telegram_background div {
     justify-content: center !important;
     display: flex !important;
@@ -3040,5 +3037,266 @@ Tredcode Carousel
   .carousel-inner .img_description_bold,
   .carousel-inner .img_description {
     font-size: medium;
+  }
+}
+
+/* ---------------------------
+WHAT U R GOING TO LEARN IN TCI 
+---------------------------- */
+
+.contextWillLearn[data-v-4ce558de] {
+  margin-top: 120px;
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn[data-v-4ce558de] {
+    width: 100%;
+    margin: 60px auto 0 auto;
+  }
+}
+
+.contextWillLearn .mainHead[data-v-4ce558de] {
+  max-width: 950px;
+  margin: 0 auto;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 54px;
+  color: rgb(51, 51, 107);
+  text-align: center;
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn .mainHead[data-v-4ce558de] {
+    width: 75%;
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+}
+
+.contextWillLearn .cardsContainer[data-v-4ce558de],
+.contextWillLearn .cardsContainerMob[data-v-4ce558de] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 58px;
+}
+
+.contextWillLearn .cardsContainer .willLearnCard[data-v-4ce558de],
+.contextWillLearn .cardsContainerMob .willLearnCard[data-v-4ce558de] {
+  width: 385px;
+  height: 340px;
+  padding: 30px 10px 30px 30px;
+  margin: 10px;
+  background-color: #e1e1ff;
+  border-left: 8px solid #081452;
+  border-radius: 10px;
+}
+
+.contextWillLearn .cardsContainer .willLearnCard .head[data-v-4ce558de],
+.contextWillLearn .cardsContainerMob .willLearnCard .head[data-v-4ce558de] {
+  display: flex;
+  align-items: center;
+}
+
+.contextWillLearn
+  .cardsContainer
+  .willLearnCard
+  .head
+  img.headIcon[data-v-4ce558de],
+.contextWillLearn
+  .cardsContainerMob
+  .willLearnCard
+  .head
+  img.headIcon[data-v-4ce558de] {
+  width: 30px;
+  margin-right: 17px;
+}
+
+.contextWillLearn .cardsContainer .willLearnCard .head .text[data-v-4ce558de],
+.contextWillLearn
+  .cardsContainerMob
+  .willLearnCard
+  .head
+  .text[data-v-4ce558de] {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 36px;
+  color: #324ed4;
+}
+
+.contextWillLearn .cardsContainer .willLearnCard .description[data-v-4ce558de],
+.contextWillLearn
+  .cardsContainerMob
+  .willLearnCard
+  .description[data-v-4ce558de] {
+  margin-top: 17px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3a4392;
+}
+
+.contextWillLearn .cardsContainer .willLearnCard .pointsHead[data-v-4ce558de],
+.contextWillLearn
+  .cardsContainerMob
+  .willLearnCard
+  .pointsHead[data-v-4ce558de] {
+  margin-top: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 35px;
+  color: #081452;
+}
+
+.contextWillLearn .cardsContainer .willLearnCard .points[data-v-4ce558de],
+.contextWillLearn .cardsContainerMob .willLearnCard .points[data-v-4ce558de] {
+  margin-top: 13px;
+}
+
+.contextWillLearn
+  .cardsContainer
+  .willLearnCard
+  .points
+  .point[data-v-4ce558de],
+.contextWillLearn
+  .cardsContainerMob
+  .willLearnCard
+  .points
+  .point[data-v-4ce558de] {
+  display: flex;
+  margin-top: 16px;
+}
+
+.contextWillLearn
+  .cardsContainer
+  .willLearnCard
+  .points
+  .point
+  img.pointIcon[data-v-4ce558de],
+.contextWillLearn
+  .cardsContainerMob
+  .willLearnCard
+  .points
+  .point
+  img.pointIcon[data-v-4ce558de] {
+  width: 20px;
+  margin-right: 13px;
+}
+
+.contextWillLearn
+  .cardsContainer
+  .willLearnCard
+  .points
+  .point
+  .title[data-v-4ce558de],
+.contextWillLearn
+  .cardsContainerMob
+  .willLearnCard
+  .points
+  .point
+  .title[data-v-4ce558de] {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3a4392;
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn .cardsContainer[data-v-4ce558de] {
+    display: none;
+  }
+}
+
+.contextWillLearn .cardsContainerMob[data-v-4ce558de] {
+  display: none;
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn .cardsContainerMob[data-v-4ce558de] {
+    display: block;
+    align-items: center;
+    margin-top: 23px;
+  }
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn .cardsContainerMob .willLearnCard[data-v-4ce558de] {
+    width: 92.5%;
+    max-width: 365px;
+    max-height: 300px;
+    padding: 25px 10px 25px 25px;
+    margin: 0 auto;
+    background-color: #191920;
+  }
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn
+    .cardsContainerMob
+    .willLearnCard
+    .head
+    img.headIcon[data-v-4ce558de] {
+    width: 20px;
+    margin-right: 15px;
+  }
+}
+
+.contextWillLearn
+  .cardsContainerMob
+  .willLearnCard
+  .head
+  .text[data-v-4ce558de] {
+  font-size: 0.875rem;
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn
+    .cardsContainerMob
+    .willLearnCard
+    .description[data-v-4ce558de] {
+    margin-top: 12px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn
+    .cardsContainerMob
+    .willLearnCard
+    .pointsHead[data-v-4ce558de] {
+    margin-top: 20px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn
+    .cardsContainerMob
+    .willLearnCard
+    .points
+    .point[data-v-4ce558de] {
+    margin-top: 9px;
+  }
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn
+    .cardsContainerMob
+    .willLearnCard
+    .points
+    .point
+    img.pointIcon[data-v-4ce558de] {
+    width: 16px;
+    margin-right: 9px;
+  }
+}
+
+@media (max-width: 62.25em) {
+  .contextWillLearn
+    .cardsContainerMob
+    .willLearnCard
+    .points
+    .point
+    .title[data-v-4ce558de] {
+    font-size: 0.875rem;
   }
 }
